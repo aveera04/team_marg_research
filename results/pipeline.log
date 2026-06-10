@@ -1,0 +1,169 @@
+2026-06-10 15:43:16,064 [INFO] ============================================================
+2026-06-10 15:43:16,064 [INFO]   DARS-GNN Pipeline  –  Starting
+2026-06-10 15:43:16,064 [INFO] ============================================================
+2026-06-10 15:43:16,073 [INFO] [1/7] Loading data …
+2026-06-10 15:43:16,074 [INFO] Loading UPI data from: data/upi_transactions.csv
+2026-06-10 15:43:16,111 [INFO] Columns after normalization: ['transaction_id', 'timestamp', 'transaction_type', 'merchant_category', 'amount_inr', 'transaction_status', 'sender_age_group', 'receiver_age_group', 'sender_state', 'sender_bank', 'receiver_bank', 'device_type', 'network_type', 'fraud_flag', 'hour_of_day', 'day_of_week', 'is_weekend']
+2026-06-10 15:43:16,124 [INFO] Dropped 0 rows with missing essential fields.
+2026-06-10 15:43:16,125 [INFO] UPI data loaded: 5000 rows, 17 columns.
+2026-06-10 15:43:16,126 [INFO] Loading bank data from: data/bank_statements.xlsx
+2026-06-10 15:43:16,592 [INFO] Bank data loaded: 330 rows.
+2026-06-10 15:43:19,976 [INFO] [2/7] Feature engineering …
+2026-06-10 15:43:20,012 [INFO] Behavioral features computed.
+2026-06-10 15:43:20,117 [INFO] Geographic risk scores computed.
+2026-06-10 15:43:20,125 [INFO] Vulnerability scores computed.
+2026-06-10 15:43:20,187 [INFO] Categorical encoding complete for 7 columns.
+2026-06-10 15:43:20,189 [INFO]   BRS feature matrix: (5000, 18)
+2026-06-10 15:44:24,768 [INFO] ============================================================
+2026-06-10 15:44:24,768 [INFO]   DARS-GNN Pipeline  –  Starting
+2026-06-10 15:44:24,768 [INFO] ============================================================
+2026-06-10 15:44:24,770 [INFO] [1/7] Loading data …
+2026-06-10 15:44:24,770 [INFO] Loading UPI data from: data/upi_transactions.csv
+2026-06-10 15:44:24,803 [INFO] Columns after normalization: ['transaction_id', 'timestamp', 'transaction_type', 'merchant_category', 'amount_inr', 'transaction_status', 'sender_age_group', 'receiver_age_group', 'sender_state', 'sender_bank', 'receiver_bank', 'device_type', 'network_type', 'fraud_flag', 'hour_of_day', 'day_of_week', 'is_weekend']
+2026-06-10 15:44:24,819 [INFO] Dropped 0 rows with missing essential fields.
+2026-06-10 15:44:24,820 [INFO] UPI data loaded: 5000 rows, 17 columns.
+2026-06-10 15:44:24,821 [INFO] Loading bank data from: data/bank_statements.xlsx
+2026-06-10 15:44:25,320 [INFO] Bank data loaded: 330 rows.
+2026-06-10 15:44:25,321 [INFO]   UPI  -> 5,000 transactions, 17 columns
+2026-06-10 15:44:25,321 [INFO]   Bank -> 330 rows
+2026-06-10 15:44:27,840 [INFO] [2/7] Feature engineering …
+2026-06-10 15:44:27,882 [INFO] Behavioral features computed.
+2026-06-10 15:44:27,986 [INFO] Geographic risk scores computed.
+2026-06-10 15:44:27,995 [INFO] Vulnerability scores computed.
+2026-06-10 15:44:28,056 [INFO] Categorical encoding complete for 7 columns.
+2026-06-10 15:44:28,059 [INFO]   BRS feature matrix: (5000, 18)
+2026-06-10 15:44:28,071 [WARNING] torch not found. GATNetwork will be unavailable. Install with: pip install torch
+2026-06-10 15:44:28,072 [WARNING] torch_geometric not found. GATNetwork will be unavailable. Install with: pip install torch-geometric
+2026-06-10 15:45:28,212 [INFO] ============================================================
+2026-06-10 15:45:28,212 [INFO]   DARS-GNN Pipeline  –  Starting
+2026-06-10 15:45:28,213 [INFO] ============================================================
+2026-06-10 15:45:28,214 [INFO] [1/7] Loading data …
+2026-06-10 15:45:28,214 [INFO] Loading UPI data from: data/upi_transactions.csv
+2026-06-10 15:45:28,254 [INFO] Columns after normalization: ['transaction_id', 'timestamp', 'transaction_type', 'merchant_category', 'amount_inr', 'transaction_status', 'sender_age_group', 'receiver_age_group', 'sender_state', 'sender_bank', 'receiver_bank', 'device_type', 'network_type', 'fraud_flag', 'hour_of_day', 'day_of_week', 'is_weekend']
+2026-06-10 15:45:28,271 [INFO] Dropped 0 rows with missing essential fields.
+2026-06-10 15:45:28,272 [INFO] UPI data loaded: 5000 rows, 17 columns.
+2026-06-10 15:45:28,272 [INFO] Loading bank data from: data/bank_statements.xlsx
+2026-06-10 15:45:28,783 [INFO] Bank data loaded: 330 rows.
+2026-06-10 15:45:28,783 [INFO]   UPI  -> 5,000 transactions, 17 columns
+2026-06-10 15:45:28,783 [INFO]   Bank -> 330 rows
+2026-06-10 15:45:31,258 [INFO] [2/7] Feature engineering …
+2026-06-10 15:45:31,302 [INFO] Behavioral features computed.
+2026-06-10 15:45:31,407 [INFO] Geographic risk scores computed.
+2026-06-10 15:45:31,413 [INFO] Vulnerability scores computed.
+2026-06-10 15:45:31,466 [INFO] Categorical encoding complete for 7 columns.
+2026-06-10 15:45:31,468 [INFO]   BRS feature matrix: (5000, 18)
+2026-06-10 15:45:31,478 [WARNING] torch not found. GATNetwork will be unavailable. Install with: pip install torch
+2026-06-10 15:45:31,480 [WARNING] torch_geometric not found. GATNetwork will be unavailable. Install with: pip install torch-geometric
+2026-06-10 15:46:22,867 [INFO] ============================================================
+2026-06-10 15:46:22,867 [INFO]   DARS-GNN Pipeline  –  Starting
+2026-06-10 15:46:22,867 [INFO] ============================================================
+2026-06-10 15:46:22,868 [INFO] [1/7] Loading data …
+2026-06-10 15:46:22,868 [INFO] Loading UPI data from: data/upi_transactions.csv
+2026-06-10 15:46:22,897 [INFO] Columns after normalization: ['transaction_id', 'timestamp', 'transaction_type', 'merchant_category', 'amount_inr', 'transaction_status', 'sender_age_group', 'receiver_age_group', 'sender_state', 'sender_bank', 'receiver_bank', 'device_type', 'network_type', 'fraud_flag', 'hour_of_day', 'day_of_week', 'is_weekend']
+2026-06-10 15:46:22,913 [INFO] Dropped 0 rows with missing essential fields.
+2026-06-10 15:46:22,914 [INFO] UPI data loaded: 5000 rows, 17 columns.
+2026-06-10 15:46:22,915 [INFO] Loading bank data from: data/bank_statements.xlsx
+2026-06-10 15:46:23,390 [INFO] Bank data loaded: 330 rows.
+2026-06-10 15:46:23,390 [INFO]   UPI  -> 5,000 transactions, 17 columns
+2026-06-10 15:46:23,390 [INFO]   Bank -> 330 rows
+2026-06-10 15:46:25,770 [INFO] [2/7] Feature engineering …
+2026-06-10 15:46:25,808 [INFO] Behavioral features computed.
+2026-06-10 15:46:25,912 [INFO] Geographic risk scores computed.
+2026-06-10 15:46:25,923 [INFO] Vulnerability scores computed.
+2026-06-10 15:46:25,974 [INFO] Categorical encoding complete for 7 columns.
+2026-06-10 15:46:25,976 [INFO]   BRS feature matrix: (5000, 18)
+2026-06-10 15:46:25,985 [WARNING] torch not found. GATNetwork will be unavailable. Install with: pip install torch
+2026-06-10 15:46:25,986 [WARNING] torch_geometric not found. GATNetwork will be unavailable. Install with: pip install torch-geometric
+2026-06-10 15:46:26,036 [INFO] [3/7] Training IsolationForest (BRS) …
+2026-06-10 15:46:26,037 [INFO] Fitting IsolationForest on 5000 samples...
+2026-06-10 15:46:26,480 [INFO] IsolationForest training complete.
+2026-06-10 15:46:26,546 [INFO]   BRS  -> min=0.00, max=100.00, mean=33.38
+2026-06-10 15:46:26,553 [INFO] [4/7] Building transaction graph …
+2026-06-10 15:46:26,595 [INFO] Graph constructed: 321 edges, 40 account nodes.
+2026-06-10 15:46:26,595 [INFO]   GAT skipped (--no_gat flag or no edges).
+2026-06-10 15:46:26,596 [INFO] [5/7] Training XGBoost shell classifier (SAS) …
+2026-06-10 15:46:26,596 [INFO] Class distribution before SMOTE: {np.int64(0): np.int64(4850), np.int64(1): np.int64(150)}
+2026-06-10 15:46:29,055 [INFO] Class distribution after SMOTE: {np.int64(0): np.int64(4850), np.int64(1): np.int64(4850)}
+2026-06-10 15:46:29,055 [INFO] Fitting XGBoost on 9700 samples...
+2026-06-10 15:46:29,055 [WARNING]   XGBoost training failed: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'. SAS set to 0.
+2026-06-10 15:46:29,055 [INFO] [6/7] Computing DARS …
+2026-06-10 15:46:29,056 [INFO]   DARS -> min=1.93, max=65.00, mean=24.43
+2026-06-10 15:46:30,836 [INFO] [7/7] Evaluating and generating plots …
+2026-06-10 15:46:30,865 [INFO] 
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99      4850
+           1       1.00      0.07      0.14       150
+
+    accuracy                           0.97      5000
+   macro avg       0.99      0.54      0.56      5000
+weighted avg       0.97      0.97      0.96      5000
+
+2026-06-10 15:46:30,867 [INFO] Metrics saved to results/report_metrics.json
+2026-06-10 15:46:30,867 [INFO]   Accuracy=0.9722  F1=0.1366  AUC=0.9984
+2026-06-10 15:46:31,490 [INFO] Risk distribution plot saved to results/risk_distribution.png
+2026-06-10 15:46:32,463 [INFO] Amount comparison plot saved to results/amount_comparison.png
+2026-06-10 15:46:34,043 [INFO] Score dashboard saved to results/score_dashboard.png
+2026-06-10 15:46:34,045 [WARNING]   SHAP plot failed: need to call fit or load_model beforehand
+2026-06-10 15:47:46,204 [INFO] ============================================================
+2026-06-10 15:47:46,205 [INFO]   DARS-GNN Pipeline  –  Starting
+2026-06-10 15:47:46,205 [INFO] ============================================================
+2026-06-10 15:47:46,206 [INFO] [1/7] Loading data …
+2026-06-10 15:47:46,206 [INFO] Loading UPI data from: data/upi_transactions.csv
+2026-06-10 15:47:46,239 [INFO] Columns after normalization: ['transaction_id', 'timestamp', 'transaction_type', 'merchant_category', 'amount_inr', 'transaction_status', 'sender_age_group', 'receiver_age_group', 'sender_state', 'sender_bank', 'receiver_bank', 'device_type', 'network_type', 'fraud_flag', 'hour_of_day', 'day_of_week', 'is_weekend']
+2026-06-10 15:47:46,255 [INFO] Dropped 0 rows with missing essential fields.
+2026-06-10 15:47:46,256 [INFO] UPI data loaded: 5000 rows, 17 columns.
+2026-06-10 15:47:46,256 [INFO] Loading bank data from: data/bank_statements.xlsx
+2026-06-10 15:47:46,737 [INFO] Bank data loaded: 330 rows.
+2026-06-10 15:47:46,738 [INFO]   UPI  -> 5,000 transactions, 17 columns
+2026-06-10 15:47:46,738 [INFO]   Bank -> 330 rows
+2026-06-10 15:47:49,122 [INFO] [2/7] Feature engineering …
+2026-06-10 15:47:49,157 [INFO] Behavioral features computed.
+2026-06-10 15:47:49,261 [INFO] Geographic risk scores computed.
+2026-06-10 15:47:49,269 [INFO] Vulnerability scores computed.
+2026-06-10 15:47:49,323 [INFO] Categorical encoding complete for 7 columns.
+2026-06-10 15:47:49,324 [INFO]   BRS feature matrix: (5000, 18)
+2026-06-10 15:47:49,337 [WARNING] torch not found. GATNetwork will be unavailable. Install with: pip install torch
+2026-06-10 15:47:49,339 [WARNING] torch_geometric not found. GATNetwork will be unavailable. Install with: pip install torch-geometric
+2026-06-10 15:47:49,388 [INFO] [3/7] Training IsolationForest (BRS) …
+2026-06-10 15:47:49,388 [INFO] Fitting IsolationForest on 5000 samples...
+2026-06-10 15:47:49,821 [INFO] IsolationForest training complete.
+2026-06-10 15:47:49,885 [INFO]   BRS  -> min=0.00, max=100.00, mean=33.38
+2026-06-10 15:47:49,888 [INFO] [4/7] Building transaction graph …
+2026-06-10 15:47:49,931 [INFO] Graph constructed: 321 edges, 40 account nodes.
+2026-06-10 15:47:49,931 [INFO]   GAT skipped (--no_gat flag or no edges).
+2026-06-10 15:47:49,931 [INFO] [5/7] Training XGBoost shell classifier (SAS) …
+2026-06-10 15:47:49,932 [INFO] Class distribution before SMOTE: {np.int64(0): np.int64(4850), np.int64(1): np.int64(150)}
+2026-06-10 15:47:51,635 [INFO] Class distribution after SMOTE: {np.int64(0): np.int64(4850), np.int64(1): np.int64(4850)}
+2026-06-10 15:47:51,635 [INFO] Fitting XGBoost on 9700 samples...
+2026-06-10 15:47:52,657 [INFO] XGBoost training complete.
+2026-06-10 15:47:52,661 [INFO]   SAS  -> min=29.02, max=95.15
+2026-06-10 15:47:52,661 [INFO] [6/7] Computing DARS …
+2026-06-10 15:47:52,662 [INFO]   DARS -> min=1.93, max=65.00, mean=24.43
+2026-06-10 15:47:54,047 [INFO] [7/7] Evaluating and generating plots …
+2026-06-10 15:47:54,075 [INFO] 
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99      4850
+           1       1.00      0.07      0.14       150
+
+    accuracy                           0.97      5000
+   macro avg       0.99      0.54      0.56      5000
+weighted avg       0.97      0.97      0.96      5000
+
+2026-06-10 15:47:54,077 [INFO] Metrics saved to results/report_metrics.json
+2026-06-10 15:47:54,077 [INFO]   Accuracy=0.9722  F1=0.1366  AUC=0.9984
+2026-06-10 15:47:54,671 [INFO] Risk distribution plot saved to results/risk_distribution.png
+2026-06-10 15:47:55,589 [INFO] Amount comparison plot saved to results/amount_comparison.png
+2026-06-10 15:47:57,162 [INFO] Score dashboard saved to results/score_dashboard.png
+2026-06-10 15:47:57,837 [INFO] Feature importance plot saved to results/feature_importance.png
+2026-06-10 15:48:00,472 [INFO] Network plot saved to results/transaction_network.png
+2026-06-10 15:48:00,612 [INFO]   Scored transactions saved to results/transactions_with_DARS.csv
+2026-06-10 15:48:00,624 [INFO] IsolationForest saved to results/iso_forest_model.pkl
+2026-06-10 15:48:00,628 [INFO] XGBoost model saved to results/xgb_shell_model.json
+2026-06-10 15:48:00,628 [INFO] ============================================================
+2026-06-10 15:48:00,629 [INFO]   DARS-GNN Pipeline - Complete
+2026-06-10 15:48:00,629 [INFO]   Transactions analysed : 5,000
+2026-06-10 15:48:00,629 [INFO]   Flagged (DARS >= 60) : 11 (0.22%)
+2026-06-10 15:48:00,629 [INFO]   Output directory       : C:\Users\abirc\Desktop\UPI_risk_analysis\results
+2026-06-10 15:48:00,629 [INFO] ============================================================

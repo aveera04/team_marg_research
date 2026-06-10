@@ -1,0 +1,30 @@
+# DARS-GNN Pipeline – Requirements
+# Python >= 3.10 required
+
+# ── Core data science ────────────────────────────────────────────────────────
+pandas>=1.5
+numpy>=1.24
+openpyxl>=3.1         # for reading .xlsx files
+
+# ── Machine learning ────────────────────────────────────────────────────────
+scikit-learn>=1.2
+imbalanced-learn>=0.10  # SMOTE
+
+# ── Gradient boosting ───────────────────────────────────────────────────────
+xgboost>=2.0
+
+# ── Deep learning (CPU build; swap for GPU variant if needed) ───────────────
+torch>=2.0
+torch-geometric>=2.3   # GATConv
+
+# ── Visualization ────────────────────────────────────────────────────────────
+matplotlib>=3.7
+seaborn>=0.12
+networkx>=3.1
+
+# ── Explainability ──────────────────────────────────────────────────────────
+shap>=0.42
+
+# ── Optional extras ─────────────────────────────────────────────────────────
+plotly>=5.0            # for interactive plots (optional)
+# geopandas>=0.14      # uncomment if lat/lon geospatial features are used
