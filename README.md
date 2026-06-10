@@ -7,7 +7,7 @@ A complete end-to-end fraud detection pipeline for UPI transactions using Graph 
 ## 📁 Project Structure
 
 ```
-UPI_risk_analysis/
+ream_marg_research/
 ├── data_loader.py      # Load & preprocess UPI CSV and Bank XLSX
 ├── features.py         # Feature engineering (behavioral, geo, vulnerability, SMOTE)
 ├── models.py           # IsolationForest, GATNetwork, XGBoostClassifier
